@@ -1,6 +1,5 @@
-"use client";
-import Image from "next/image";
-import { flattenStrapiData, getData } from "@/lib/utils";
+
+import { getData } from "@/lib/utils";
 import qs from "qs";
 import SplideSlider from "../ui/SplideSlider";
 
