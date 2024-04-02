@@ -18,7 +18,7 @@ export const getData = async (id: string, query: string) => {
       Authorization: `Bearer ${strapiAPI}`,
     },
   };
-  const fetchURL = baseURL + id + "?" + query;
+  const fetchURL = baseURL + "/" + id + "?" + query;
   console.log(fetchURL);
   const res = await fetch(fetchURL, {
     method: "GET",
