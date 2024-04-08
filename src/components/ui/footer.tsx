@@ -15,9 +15,13 @@ export default function Footer() {
       title: "Contact",
       link: "",
     },
+    {
+      title: "Get Started",
+      link: "/book",
+    },
   ];
   return (
-    <footer className="section-padding flex justify-around bg-secondary">
+    <footer className="section-padding flex justify-around bg-stone-800 text-white mt-24">
       <div>logo</div>
       <div className="flex flex-col gap-4 text-center">
         {links.map((link) => (
@@ -25,9 +29,6 @@ export default function Footer() {
             {link.title}
           </Link>
         ))}
-        <Link href="/get-started">
-          <Button variant="default">Get Started</Button>
-        </Link>
       </div>
     </footer>
   );
