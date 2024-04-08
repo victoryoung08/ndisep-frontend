@@ -8,7 +8,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "../ui/button";
 import Link from "next/link";
-
+import MainCTAButton from "../blocks/MainCTAButton";
 
 export default function HowItWorks() {
   const images = [
@@ -51,9 +51,8 @@ export default function HowItWorks() {
         <div>
           <span>Get Started with Exercise</span>
           <h2>How our Exercise Physiology Sessions work</h2>
-          <Link href="/book">
-            <Button className="mt-4">Get Started </Button>
-          </Link>
+
+          <MainCTAButton type="default" />
         </div>
         <div className="flex items-center justify-center w-full gap-8">
           {images.map((i) => (

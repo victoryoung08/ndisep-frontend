@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
@@ -45,10 +46,17 @@ export default function LeadForm() {
             </label>
             <Textarea name="info" />
           </div>
-          <div className="py-4 mx-auto">
+          <div className="py-4 mx-auto relative">
             <Button variant="default" size="lg" type="submit">
               Contact Us
             </Button>
+            <Image
+              src={"/logos/ndis.svg"}
+              width={32}
+              height={32}
+              alt="ndis-logo"
+              className="absolute top-1/2 right-[-40%] -translate-y-[50%]"
+            />
           </div>
         </form>
       </div>

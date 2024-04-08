@@ -1,4 +1,5 @@
 import LogoBlock from "@/components/blocks/LogoBlock";
+import MainCTAButton from "@/components/blocks/MainCTAButton";
 import MapsEmbed from "@/components/blocks/MapsEmbed";
 import SliderTextWithImage from "@/components/blocks/SliderTextWithImage";
 import AboutUs from "@/components/sections/AboutUs";
@@ -64,11 +65,7 @@ export default async function Home() {
               <br />
               to help you build strength and fitness
             </p>
-            <div>
-              <Button variant="default" className="bg-accent text-foreground">
-                Contact Us
-              </Button>
-            </div>
+            <MainCTAButton type="secondary" />
           </div>
         </div>
       </section>

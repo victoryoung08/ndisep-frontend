@@ -1,12 +1,14 @@
+import MainCTAButton from "../blocks/MainCTAButton";
 import { Button } from "../ui/button";
 
 export default function AboutUs() {
   return (
-    <section className="bg-sky-900 px-4 py-12">
+    <section className="bg-sky-900 px-4 py-12" id="about">
       <div className="bg-amber-50 rounded-tl-[48px] rounded-tr-[48px] rounded-b-[24px] section-padding flex flex-col gap-4 ">
         <div className="flex flex-col gap-4">
+          <p>Liverpool & South West Sydney</p>
           <h2>
-            NDIS Exercise Physiologist Looking After Your Health and Fitness
+            NDIS Exercise Physiologists Looking After Your Health and Fitness
           </h2>
           <p>
             With strong grass roots to the South West Region of Sydney,
@@ -20,7 +22,7 @@ export default function AboutUs() {
             and fitness.
           </p>
           <div className="mx-auto lg:ml-0">
-            <Button variant="default">Get Started</Button>
+            <MainCTAButton type="default" />
           </div>
         </div>
       </div>

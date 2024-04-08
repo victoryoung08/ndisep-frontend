@@ -31,6 +31,10 @@ const logos = [
     name: "upa",
     src: "/logos/upa.png",
   },
+  {
+    name: "ndis",
+    src: "/logos/ndis.svg",
+  },
 ];
 
 type LogoBlockType = {
