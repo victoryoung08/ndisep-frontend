@@ -2,6 +2,7 @@ import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import qs from "qs";
 import { AnyAaaaRecord } from "dns";
+import { redirect } from "next/navigation";
 
 const baseURL = process.env.NEXT_PUBLIC_MAILERLITE_BASEURL;
 const api = process.env.NEXT_PUBLIC_MAILERLITE_API;
@@ -43,4 +44,5 @@ export const addMailerliteContact = async (formData: any) => {
   } catch (err) {
     console.log("Something went wrong with: ", err);
   }
+  redirect("/thank-you");
 };
