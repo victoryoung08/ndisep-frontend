@@ -49,7 +49,7 @@ export default async function Home() {
         <div className="flex flex-col items-center justify-center section-padding gap-8 lg:flex-row">
           <div className="w-full h-64 relative rounded-xl overflow-hidden lg:order-1 lg:h-96">
             <Image
-              src="/ndis-exercise-physiology-mobile.jpeg"
+              src="/photos/exercise-4.png"
               fill
               style={{
                 objectFit: "cover",
